@@ -1,27 +1,24 @@
 package Logging;
 
-import java.io.IOException;
-import java.io.FileWriter;
+/**
+ * Реализован интерфейс, так как в последствии могут быть расширен функционал: запись в другие форматы файлов или изменена сам формат записи
+ */
+public interface Log {
 
-public class Log {
+    /**
+     * Метод записи выражения в файл
+     * @param expression - математическое выражение в в иде отформатированной строки
+     * @param nameFile - путь к файлу
+     */
+    public void writeFile(String expression, String nameFile);
 
-    public void writeFile(String expression, String nameFile) {
-        try (FileWriter fw = new FileWriter(nameFile, true)) {
-            fw.write(expression + ";");
-            fw.append('\n');
-            fw.close();
-        } catch (IOException ex) {
-            System.out.println(ex.getMessage());
-        }
-
-    }
-
-    public String getExpression(Double x, Double y, Double result, Integer operation){
-        String op = "";
-        if(operation == 1) op = " + ";
-        else if(operation == 2) op = " - ";
-        else if (operation == 3) op = " * ";
-        else op = " / ";
-        return String.format("%s%s%s = %s", x, op, y, result);
-    }
+    /**
+     * Метод получения математического выражения в виде отформатированной строки
+     * @param x - первое число
+     * @param y - второе число
+     * @param result - реузльтат выражения
+     * @param operation - математическое действие
+     * @return - отформатированная строка
+     */
+    public String getExpression(Double x, Double y, Double result, Integer operation);
 }
