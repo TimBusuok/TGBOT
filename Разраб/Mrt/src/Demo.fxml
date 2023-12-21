@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="demo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="305.0" prefWidth="681.0" style="-fx-background-color: #2b9ced;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.Controller">
+   <children>
+      <BorderPane fx:id="title" layoutX="67.0" layoutY="44.0" prefHeight="39.0" prefWidth="547.0" style="-fx-background-color: white; -fx-background-radius: 50;">
+         <center>
+            <Text fx:id="title_text" fill="#0070f0" strokeType="OUTSIDE" strokeWidth="0.0" text="MRT EXPERT SIMALUTOR" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Ebrima" size="21.0" />
+               </font>
+            </Text>
+         </center>
+      </BorderPane>
+      <Button fx:id="button1" layoutX="36.0" layoutY="121.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="370.0" style="-fx-background-radius: 150; -fx-background-color: #6882a8;" text="Тренажёр Головы" textFill="#efeaea" />
+      <Button fx:id="button2" layoutX="36.0" layoutY="157.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="370.0" style="-fx-background-radius: 150; -fx-background-color: #6882a8;" text="Тренажёр Позвоночника" textFill="#efeded" />
+      <Button fx:id="button4" layoutX="36.0" layoutY="231.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="370.0" style="-fx-background-radius: 150; -fx-background-color: #6882a8;" text="Тренажёр" textFill="#dfdddd" />
+      <Button fx:id="button3" layoutX="36.0" layoutY="193.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="370.0" style="-fx-background-radius: 150; -fx-background-color: #6882a8;" text="Тренажёр нижней части тела" textFill="#e7e4e4" />
+      <Text fx:id="text" fill="#dc2238" layoutX="275.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ВЫБИРИТЕ ТРЕНАЖЁР" wrappingWidth="223.009765625" />
+      <ImageView fx:id="image" fitHeight="181.0" fitWidth="239.0" layoutX="442.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-radius: 150; -fx-background-color: #6882a8;">
+         <image>
+            <Image url="@../../../../../Downloads/BzlFvTDlxa0wL392H6WDWY7jcMBOI7ttxgBhRcdc3khg11hzly5EvNtMdXr6Pc65J9wR9g1575dyPhjmaur1WlPu-transformed.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image2" fitHeight="39.0" fitWidth="107.0" layoutX="13.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/572f8067fe9742d2402cd2090e486c7f-transformed.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
