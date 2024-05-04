@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.time.HelloController">
+<AnchorPane fx:id="timer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="397.0" prefWidth="664.0" style="-fx-background-color: #08efff;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+         <Button fx:id="button_stop" layoutX="156.0" layoutY="297.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="324.0" style="-fx-background-color: #05e8b3;" text="STOP" />
+      <Button fx:id="button_time" layoutX="153.0" layoutY="242.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="324.0" style="-fx-background-color: #05e8b3;" text="TIME" />
+      <AnchorPane fx:id="panel_time" layoutX="86.0" layoutY="143.0" prefHeight="55.0" prefWidth="468.0" style="-fx-background-color: #3bc4a4;">
+         <children>
+            <Text fx:id="time" layoutX="87.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00:00" textAlignment="CENTER" wrappingWidth="280.23829650878906">
+               <font>
+                  <Font name="Agency FB" size="35.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+         <Button fx:id="reset_time" layoutX="294.0" layoutY="350.0" mnemonicParsing="false" style="-fx-background-color: #05e8b3;" text="RESET">
+            <font>
+               <Font size="13.0" />
+            </font>
+         </Button>
+   </children>
+</AnchorPane>
+</Pane>
